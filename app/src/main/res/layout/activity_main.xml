@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.carolina.tumascota.MainActivity">
+
+    <TextView
+        android:id="@+id/titulo"
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/titulo1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/bienvenidos" />
+
+    <ImageView
+        android:id="@+id/imagenmascota"
+        android:layout_below="@id/titulo"
+        android:src="@drawable/moscotaini"
+        android:layout_width="match_parent"
+
+        android:layout_height="200dp" />
+
+    <ScrollView
+        android:background="@color/colorPrimary"
+        android:id="@+id/vistascrolable"
+        android:layout_below="@id/imagenmascota"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Este aplicacion permite a miles de personas poder
+            estar pendiente de tu mascota te recuerda la hora en que tienes que sacarlo hacer necesidades la hora de comer te recuerda
+            el cumpleaños de tu perro espacio para agender en una cita medica tiene posibilidad
+             te da tips."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </ScrollView>
+
+
+    <TextView
+
+
+        android:id="@+id/registro"
+        android:textSize="@dimen/titulo1"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/vistascrolable"
+        android:text="Registra tu Mascota"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/verlistado"
+        android:text="ver listado"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

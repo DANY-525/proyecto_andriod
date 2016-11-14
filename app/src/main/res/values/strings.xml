@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">TuMascota</string>
+    <string name="bienvenidos">Bienvenidos</string>
+    <string name="nombre">Nombre</string>
+    <string name="apellido">Apellido</string>
+    <string name="edad">Edad</string>
+    <string name="descripcion">Descripcion</string>
+    <string name="fechanacimiento">Fecha_nacimiento</string>
+    <string name="tiposangre">Tipo Sangre</string>
+    <string name="raza">Raza</string>
+    <string name="necesidades">Hora_necesidades</string>
+    <string name="citaveterinaria">Cita veterinario</string>
+    <string name="horacomida">Hora Comida</string>
+    <string name="enviar">enviar</string>
+    <string-array name="Games">
+        <item>League of Legends</item>
+        <item>Diablo III</item>
+        <item>God of War</item>
+        <item>Halo 4</item>
+        <item>StarCraft II</item>
+    </string-array>
+
+</resources>
