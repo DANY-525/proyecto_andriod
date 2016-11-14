@@ -9,7 +9,7 @@ import android.database.sqlite.SQLiteOpenHelper;
  */
 
 public class BaseHelper extends SQLiteOpenHelper {
-    String tabla="CREATE TABLE MASCOTAS(ID INTEGER PRIMARY KEY, NOMBRE TEXT, APELLIDO TEXT,TIPOSANGRE TEXT,FECHANACIMIENTO TEXT,RAZA TEXT)";
+    String tabla="CREATE TABLE MASCOTAS(ID INTEGER PRIMARY KEY, NOMBRE TEXT, APELLIDO TEXT)";
 
     public BaseHelper(Context context, String name, SQLiteDatabase.CursorFactory factory, int version) {
         super(context, name, factory, version);

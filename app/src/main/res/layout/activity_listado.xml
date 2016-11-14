@@ -16,13 +16,15 @@
 
         android:background="@color/colorPrimary"
 
-
+android:entries="@array/Games"
         android:id="@+id/listadomascotas"
         android:layout_width="wrap_content"
         android:layout_height="300dp"
         android:layout_below="@+id/gridView"></ListView>
 
     <GridView
+
+
 
         android:background="@color/colorblanko"
         android:layout_width="wrap_content"

@@ -35,15 +35,15 @@ private void CargarListado(){
     private ArrayList<String> ListaMoscota(){
 
         ArrayList<String> datos=new ArrayList<String>();
-        BaseHelper helper=new BaseHelper(Listado.this,"Demo2",null,1);
-        SQLiteDatabase db = helper.getWritableDatabase();
+        BaseHelper helper1=new BaseHelper(Listado.this,"Demo2",null,1);
+        SQLiteDatabase db = helper1.getWritableDatabase();
 
-        String sql2="select Id,Nombre,Apellido,Tiposangre,Fechanacimiento,Raza from mascotas";
+        String sql2="select Id,Nombre,Apellido from mascotas";
         Cursor  c= db.rawQuery(sql2,null);
         if (c.moveToFirst()) {
 
             do {
-            String linea = c.getInt(0)+""+c.getString(1)+""+c.getString(2)+""+c.getString(3)+""+c.getString(4);
+            String linea = c.getInt(0)+""+c.getString(1)+""+c.getString(2);
                 datos.add(linea);
         } while (c.moveToNext());
         }
